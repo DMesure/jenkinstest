@@ -1,0 +1,16 @@
+C:\Users\mesureda\Desktop\DMesure\.NET\jsonvalidator\jsonvalidator\bin\Debug\netcoreapp3.1\jsonvalidator.exe
+C:\Users\mesureda\Desktop\DMesure\.NET\jsonvalidator\jsonvalidator\bin\Debug\netcoreapp3.1\jsonvalidator.deps.json
+C:\Users\mesureda\Desktop\DMesure\.NET\jsonvalidator\jsonvalidator\bin\Debug\netcoreapp3.1\jsonvalidator.runtimeconfig.json
+C:\Users\mesureda\Desktop\DMesure\.NET\jsonvalidator\jsonvalidator\bin\Debug\netcoreapp3.1\jsonvalidator.runtimeconfig.dev.json
+C:\Users\mesureda\Desktop\DMesure\.NET\jsonvalidator\jsonvalidator\bin\Debug\netcoreapp3.1\jsonvalidator.dll
+C:\Users\mesureda\Desktop\DMesure\.NET\jsonvalidator\jsonvalidator\bin\Debug\netcoreapp3.1\jsonvalidator.pdb
+C:\Users\mesureda\Desktop\DMesure\.NET\jsonvalidator\jsonvalidator\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\mesureda\Desktop\DMesure\.NET\jsonvalidator\jsonvalidator\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Schema.dll
+C:\Users\mesureda\Desktop\DMesure\.NET\jsonvalidator\jsonvalidator\obj\Debug\netcoreapp3.1\jsonvalidator.csprojAssemblyReference.cache
+C:\Users\mesureda\Desktop\DMesure\.NET\jsonvalidator\jsonvalidator\obj\Debug\netcoreapp3.1\jsonvalidator.AssemblyInfoInputs.cache
+C:\Users\mesureda\Desktop\DMesure\.NET\jsonvalidator\jsonvalidator\obj\Debug\netcoreapp3.1\jsonvalidator.AssemblyInfo.cs
+C:\Users\mesureda\Desktop\DMesure\.NET\jsonvalidator\jsonvalidator\obj\Debug\netcoreapp3.1\jsonvalidator.csproj.CoreCompileInputs.cache
+C:\Users\mesureda\Desktop\DMesure\.NET\jsonvalidator\jsonvalidator\obj\Debug\netcoreapp3.1\jsonvalidator.csproj.CopyComplete
+C:\Users\mesureda\Desktop\DMesure\.NET\jsonvalidator\jsonvalidator\obj\Debug\netcoreapp3.1\jsonvalidator.dll
+C:\Users\mesureda\Desktop\DMesure\.NET\jsonvalidator\jsonvalidator\obj\Debug\netcoreapp3.1\jsonvalidator.pdb
+C:\Users\mesureda\Desktop\DMesure\.NET\jsonvalidator\jsonvalidator\obj\Debug\netcoreapp3.1\jsonvalidator.genruntimeconfig.cache

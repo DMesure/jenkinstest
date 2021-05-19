@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "qQdO5Dxjtz+9//SWzHurmKwuZuDbjAjbuIo1e2T7e1h3ecotuvSAHccukk4NtVNtt8fMTW5BhIBPCiJhsz5nnA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mesureda\\Desktop\\DMesure\\.NET\\jsonvalidator\\jsonvalidator\\jsonvalidator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mesureda\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\mesureda\\.nuget\\packages\\newtonsoft.json.schema\\3.0.14\\newtonsoft.json.schema.3.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

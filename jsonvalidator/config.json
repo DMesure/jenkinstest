@@ -1,0 +1,15 @@
+{
+    "subscriptions": [
+        {
+            "eventType": "lez-dossier-update",
+            "errorHandlingInCaseOfMultiple": "AT_MOST_ONCE",
+            "subscribers": [
+                {
+                    "webhookUrl": "",
+                    "auth": "ACCESS_KEY",
+                    "accessKey": ""
+                }
+            ]
+        }
+    ]
+}

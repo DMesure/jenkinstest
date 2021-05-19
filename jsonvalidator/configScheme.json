@@ -1,0 +1,185 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "ConfigV0.0.1",
+  "type": "object",
+  "title": "The root schema for routing config of .NET webhook handler",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+    {
+      "subscriptions": [
+        {
+          "eventType": "lez-dossier-update",
+          "errorHandlingInCaseOfMultiple": "AT_MOST_ONCE",
+          "subscribers": [
+            {
+              "webhookUrl": "",
+              "auth": "ACCESS_KEY",
+              "accessKey": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "required": [
+    "subscriptions"
+  ],
+  "properties": {
+    "subscriptions": {
+      "$id": "#/properties/subscriptions",
+      "type": "array",
+      "title": "The subscriptions schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "eventType": "lez-dossier-update",
+            "errorHandlingInCaseOfMultiple": "AT_MOST_ONCE",
+            "subscribers": [
+              {
+                "webhookUrl": "",
+                "auth": "ACCESS_KEY",
+                "accessKey": ""
+              }
+            ]
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/subscriptions/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/subscriptions/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "eventType": "lez-dossier-update",
+                "errorHandlingInCaseOfMultiple": "AT_MOST_ONCE",
+                "subscribers": [
+                  {
+                    "webhookUrl": "",
+                    "auth": "ACCESS_KEY",
+                    "accessKey": ""
+                  }
+                ]
+              }
+            ],
+            "required": [
+              "eventType",
+              "errorHandlingInCaseOfMultiple",
+              "subscribers"
+            ],
+            "properties": {
+              "eventType": {
+                "$id": "#/properties/subscriptions/items/anyOf/0/properties/eventType",
+                "type": "string",
+                "title": "The eventType schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "lez-dossier-update"
+                ]
+              },
+              "errorHandlingInCaseOfMultiple": {
+                "$id": "#/properties/subscriptions/items/anyOf/0/properties/errorHandlingInCaseOfMultiple",
+                "type": "string",
+                "title": "The errorHandlingInCaseOfMultiple schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "enum": [
+                  "EXACTLY_ONCE",
+                  "AT_LEAST_ONCE",
+                  "AT_MOST_ONCE"
+                ],
+                "examples": [
+                  "AT_MOST_ONCE"
+                ]
+              },
+              "subscribers": {
+                "$id": "#/properties/subscriptions/items/anyOf/0/properties/subscribers",
+                "type": "array",
+                "title": "The subscribers schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "webhookUrl": "",
+                      "auth": "ACCESS_KEY",
+                      "accessKey": ""
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/subscriptions/items/anyOf/0/properties/subscribers/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/subscriptions/items/anyOf/0/properties/subscribers/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "webhookUrl": "",
+                          "auth": "ACCESS_KEY",
+                          "accessKey": ""
+                        }
+                      ],
+                      "required": [
+                        "webhookUrl",
+                        "auth"
+                      ],
+                      "properties": {
+                        "webhookUrl": {
+                          "$id": "#/properties/subscriptions/items/anyOf/0/properties/subscribers/items/anyOf/0/properties/webhookUrl",
+                          "type": "string",
+                          "title": "The webhookUrl schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            ""
+                          ]
+                        },
+                        "auth": {
+                          "$id": "#/properties/subscriptions/items/anyOf/0/properties/subscribers/items/anyOf/0/properties/auth",
+                          "type": "string",
+                          "title": "The auth schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "ACCESS_KEY"
+                          ]
+                        },
+                        "accessKey": {
+                          "$id": "#/properties/subscriptions/items/anyOf/0/properties/subscribers/items/anyOf/0/properties/accessKey",
+                          "type": "string",
+                          "title": "The accessKey schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            ""
+                          ]
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    }
+  },
+  "additionalProperties": true
+}
