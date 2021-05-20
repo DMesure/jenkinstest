@@ -51,7 +51,10 @@ namespace jsonvalidator
 
             }
 
-            JObject o1 = JObject.Parse(File.ReadAllText(@"../../../config.json"));
+            Console.WriteLine("-------------------------------------------------------------------------------------");
+
+
+            /*JObject o1 = JObject.Parse(File.ReadAllText(@"../../../config.json"));
             //Console.WriteLine(o1.ToString());
 
             //using StreamReader file = File.OpenText(@"C:\Users\mesureda\Desktop\DMesure\.NET\jsonvalidator\jsonvalidator\config.json");
@@ -69,6 +72,7 @@ namespace jsonvalidator
             {
                 Console.WriteLine(str);
             }
+            */
         }
     }
 }
