@@ -47,7 +47,7 @@ namespace jsonvalidator
             string[] foldercontent = Directory.GetFiles(path);
             foreach (string item in foldercontent)
             {
-                Console.WriteLine("The folder contains the following file: ", item);
+                Console.WriteLine("The folder contains the following file: {0}", item);
 
             }
 
