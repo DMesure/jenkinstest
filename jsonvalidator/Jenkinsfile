@@ -13,22 +13,19 @@ pipeline {
     }
     stage('Ask for input') {
         input {
-          message 'Deploy?'
-          ok 'Lets go!'
-          parameters {
+            message 'Deploy?'
+            ok 'Lets go!'
+            parameters {
             string(name: 'TARGET_ENVIRONMENT', defaultValue: 'PROD', description: 'Target deployment environment')
             }
-      }
-    }
-    stage('scale-to-zero') {
-      steps {
-        sh "oc scale --replicas=0 deployment/jsonvalidator-deployment"
-      }
-    }
-    stage('scale-back-up') {
-      steps {
-        sh "oc scale --replicas=1 deployment/jsonvalidator-deployment"
-      }
+        }
+        steps {
+            echo "scaling down and back up"
+            sh '''
+                sh "oc scale --replicas=0 deployment/jsonvalidator-deployment"
+                sh "oc scale --replicas=1 deployment/jsonvalidator-deployment"
+            '''
+        }
     }
   }
 }
