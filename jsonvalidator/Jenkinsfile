@@ -22,8 +22,8 @@ pipeline {
         steps {
             echo "scaling down and back up"
             sh '''
-                sh "oc scale --replicas=0 deployment/jsonvalidator-deployment"
-                sh "oc scale --replicas=1 deployment/jsonvalidator-deployment"
+                oc scale --replicas=0 deployment/jsonvalidator-deployment
+                oc scale --replicas=1 deployment/jsonvalidator-deployment
             '''
         }
     }
