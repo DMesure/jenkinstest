@@ -12,10 +12,11 @@ pipeline {
       }
     }
     stage('Ask for input') {
-      message 'Deploy?'
-      ok 'Lets go!'
-      parameters {
-        string(name: 'TARGET_ENVIRONMENT', defaultValue: 'PROD', description: 'Target deployment environment')
+        input {
+          message 'Deploy?'
+          ok 'Lets go!'
+          parameters {
+            string(name: 'TARGET_ENVIRONMENT', defaultValue: 'PROD', description: 'Target deployment environment')
       }
     }
     stage('scale-to-zero') {
