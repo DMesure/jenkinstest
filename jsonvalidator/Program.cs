@@ -41,14 +41,14 @@ namespace jsonvalidator
 
             Console.WriteLine("-------------------------------------------------------------------------------------");
 
-            JObject o1 = JObject.Parse(File.ReadAllText(@"..\..\..\config.json"));
+            JObject o1 = JObject.Parse(File.ReadAllText(@"config.json"));
             //Console.WriteLine(o1.ToString());
 
             //using StreamReader file = File.OpenText(@"C:\Users\mesureda\Desktop\DMesure\.NET\jsonvalidator\jsonvalidator\config.json");
             //using JsonTextReader reader = new JsonTextReader(file);
             //JObject o2 = (JObject)JToken.ReadFrom(reader);
 
-            JSchema s1 = JSchema.Parse(File.ReadAllText(@"..\..\..\configScheme.json"));
+            JSchema s1 = JSchema.Parse(File.ReadAllText(@"configScheme.json"));
             //Console.WriteLine(s1.ToString());
 
 
