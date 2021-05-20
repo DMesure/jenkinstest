@@ -44,6 +44,13 @@ namespace jsonvalidator
             string path = Directory.GetCurrentDirectory();
             Console.WriteLine("The current directory is {0}", path);
 
+            string[] foldercontent = Directory.GetFiles(path);
+            foreach (string item in foldercontent)
+            {
+                Console.WriteLine("The folder contains the following file: ", item);
+
+            }
+
             JObject o1 = JObject.Parse(File.ReadAllText(@"config.json"));
             //Console.WriteLine(o1.ToString());
 
