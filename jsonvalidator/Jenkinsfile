@@ -6,6 +6,10 @@ pipeline {
         sh 'echo "This is build $BUILD_NUMBER for jenkinstest pipeline"'
       }
     }
-
+    stage('apply') {
+      steps {
+        sh "oc apply "
+      }
+    }
   }
 }

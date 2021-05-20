@@ -41,6 +41,9 @@ namespace jsonvalidator
 
             Console.WriteLine("-------------------------------------------------------------------------------------");
 
+            string path = Directory.GetCurrentDirectory();
+            Console.WriteLine("The current directory is {0}", path);
+
             JObject o1 = JObject.Parse(File.ReadAllText(@"config.json"));
             //Console.WriteLine(o1.ToString());
 
