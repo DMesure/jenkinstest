@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
+using System.Timers;
 
 namespace jsonvalidator
 {
@@ -54,6 +55,7 @@ namespace jsonvalidator
             Console.WriteLine("-------------------------------------------------------------------------------------");
 
 
+
             /*JObject o1 = JObject.Parse(File.ReadAllText(@"../../../config.json"));
             //Console.WriteLine(o1.ToString());
 
@@ -73,6 +75,7 @@ namespace jsonvalidator
                 Console.WriteLine(str);
             }
             */
+
         }
     }
 }

@@ -8,8 +8,9 @@ pipeline {
     }
     stage('apply') {
       steps {
-        sh "oc apply "
+        sh "oc start-build jsonvalidator-bc"
       }
     }
+
   }
 }
