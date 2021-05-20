@@ -6,11 +6,20 @@ pipeline {
         sh 'echo "This is build $BUILD_NUMBER for jenkinstest pipeline"'
       }
     }
-    stage('apply') {
+    stage('rebuild') {
       steps {
         sh "oc start-build jsonvalidator-bc"
       }
     }
-
+    stage('scale-to-zero') {
+      steps {
+        sh "oc scale --replicas=0 deployment/jsonvalidator-deployment"
+      }
+    }
+    stage('scale-back-up') {
+      steps {
+        sh "oc scale --replicas=1 deployment/jsonvalidator-deployment"
+      }
+    }
   }
 }
